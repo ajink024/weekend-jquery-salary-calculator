@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="client.js"></script>
+    <script src="events.js"></script>
+   <link rel="stylesheet" href="style.css">
+
+<h1> 🤑 Monthly Salary Cost Calculator 🤑</h1>
+</head>
+<body>
+<form id="employeeForm">
+
+<input 
+    id="firstNameInput" 
+    type="text" 
+    placeholder="First Name">
+<input 
+    id="lastNameInput" 
+    type="text" 
+    placeholder="Last Name">
+
+<input 
+    id="idInput"
+    type="numbers" 
+    placeholder="ID Number">
+
+<select 
+    id="jobInput">
+    <option>Junior Network Engineer</option>
+    <option>Network Engineer</option>
+    <option>Network Engineer II</option>
+    <option>Senior Network Engineer</option>
+
+
+</select>
+
+<input 
+    type="text" 
+    placeholder="Annual Salary" 
+    id="salaryInput"
+    step="0.01">
+<button id="submitBtn">Submit!</button>
+
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name </th>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+        </tr>
+        <tbody id="employeeTable">
+        <!-- <tr>
+            <td>Micheal </td>
+            <td>Black</td>
+            <td>6545</td>
+            <td>Network Engineer</td>
+            <td>$75,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Jason</td>
+            <td>Tanner</td>
+            <td>6767</td>
+            <td>Junior Network engineer</td>
+            <td>$55,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
+
+        </tr> -->
+         </tbody>
+    </thead>
+</table>
+<h3>       
+    Total Monthly Cost:💰 <span id="totalSalary">0.00</span>
+</h3>
+    
+</body>
+</html>
