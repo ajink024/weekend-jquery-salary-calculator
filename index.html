@@ -5,42 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.6.0.js"></script>
     <script src="client.js"></script>
     <script src="events.js"></script>
-   
+   <link rel="stylesheet" href="style.css">
 
-
-
-
+<h1> $ Monthly Salary Cost Calculator $</h1>
+</head>
 <body>
-    <head>
-      <div>
-        <h1> $Monthly Salary Cost Calculator$ </h1>
-        <h5>Dev By Asante Simmons</h5>
-      </div>
-    </head>
-    <div id="inputDiv">
-      <input id="firstNameInput" placeholder="First Name" type="text">
-      <input id="lastNameInput" placeholder="Last Name" type="text">
-      <input id="idNumberInput" placeholder="Employee ID" type="number">
-      <input id="jobTitleInput" placeholder="Job Title" type="text">
-      <input id="salaryInput" placeholder="Salary" type="number">
-      <button id="submitButton">Submit</button>
-    </div>
-    <div id="tableDiv">
-      <thead id="tableHead">
+<form id="employeeForm">
 
-      </thead>
+<input 
+    id="firstNameInput" 
+    type="text" 
+    placeholder="First Name">
+<input 
+    id="lastNameInput" 
+    type="text" 
+    placeholder="Last Name">
+
+<input 
+    id="idInput"
+    type="numbers" 
+    placeholder="ID Number">
+
+<select 
+    id="jobInput">
+    <option>Junior Developer</option>
+    <option>Security Engineer</option>
+    <option>DevOps</option>
+    <option>Network Programmer</option>
+
+
+</select>
+
+<input 
+    type="text" 
+    placeholder="Annual Salary" 
+    id="salaryInput"
+    step="0.01">
+<button id="submitBtn">Submit!</button>
+
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name </th>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+        </tr>
+        <tbody id="employeeTable">
+        <!-- <tr>
+            <td>Micheal </td>
+            <td>Black</td>
+            <td>6545</td>
+            <td>Network Engineer</td>
+            <td>$75,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Jason</td>
+            <td>Tanner</td>
+            <td>6767</td>
+            <td>Junior Network engineer</td>
+            <td>$55,000</td>
+            <td><button id="deleteBtn">Delete</button></td>
+        </tr> -->
+         </tbody>
+    </thead>
+</table>
+<h3>       
+    Total Monthly Expenses: <span id="totalSalary">0.00</span>
+</h3>
     
-      <tbody id="tableBody">
-
-      </tbody>
-      <tfoot id="tableFoot">
-
-      </tfoot>
-    </div>
-
-    
-  </body>
+</body>
+</html>
