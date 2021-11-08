@@ -1,55 +1,58 @@
-
-
-
-body{
- background-color: rgb(54, 16, 120);
-}
-h1{
-    text-align: center;
-    border-bottom: 4px solid black;
-    padding-bottom: 23px;
-    margin: 35px 30px;
-    font-size: 40px;
-    border: 13px solid rgb(19, 51, 70);
-    border-radius: 50px;
+body {
+  background-color: lightblue;
 }
 
-h3{
-    text-align: center;
-}
-input, select{
-    font-size: 15px;
-    padding: 7px 15px;
-    margin-right: 11px;
-    margin-bottom: 10px;
-    border: red;
+.headDiv {
+  height: 6em;
+  border: solid black 2px;
+  background-color: darkgray;
+  color: white;
+  width: 100%;
 }
 
-form{
-    width: 720px;
-    margin: 0 auto;
-}
-table{
-    width: 720px;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    background-color: gold;
-}
-tr, td{
-    border: 1px solid black;
-    font-size: 15px;
-}
-tr:nth-child(even) {
-    background-color: red;
+.tableDiv {
+  background-color: whitesmoke;
+  width: 100%;
 }
 
-#submitBtn{
-    border-radius: 2px;
-    background-color: #4c53af;
+table {
+  border: solid black 2px;
+  margin-top: 10px;
+  padding: 3px;
+  width: 100%;
 }
 
-th{
-    background-color: grey;
+.tableColumnHead {
+  background-color: darkgray;
+  border: solid black 2px;
+  width: 175px;
+  height: 2em;
+  color:white;
+}
+
+tr {
+  background-color: lightgray;
+  height: 1.35em;
+  align-content: center;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+tfoot {
+  height: 2em;
+  width: 100%;
+}
+
+.expenditureDiv {
+  margin-top: 10px;
+  background-color: darkgray;
+  border: solid black 2px;
+  color: white;
+  width: 100%;
+}
+
+.redBackground {
+  background-color: darkred;
 }
