@@ -10,9 +10,11 @@
    <link rel="stylesheet" href="style.css">
 
 <h1> $ Monthly Salary Cost Calculator $</h1>
+<h2> Developed By Asante Simmons </h2>
 </head>
 <body>
-<form id="employeeForm">
+
+
 
 <input 
     id="firstNameInput" 
@@ -45,7 +47,7 @@
     step="0.01">
 <button id="submitBtn">Submit!</button>
 
-</form>
+<h3>Employees</h3>
 <table>
     <thead>
         <tr>
@@ -54,11 +56,11 @@
             <th>ID</th>
             <th>Job Title</th>
             <th>Annual Salary</th>
-            <th></th>
         </tr>
-        <tbody id="employeeTable">
-        <!-- <tr>
-            <td>Micheal </td>
+    </thead>
+        <tbody id="employee-tbody">
+        <!--Appending Employees------->
+            <td>Dustin </td>
             <td>Black</td>
             <td>6545</td>
             <td>Network Engineer</td>
@@ -66,15 +68,14 @@
             <td><button id="deleteBtn">Delete</button></td>
         </tr>
         <tr>
-            <td>Jason</td>
-            <td>Tanner</td>
+            <td>Connor</td>
+            <td>Java</td>
             <td>6767</td>
-            <td>Junior Network engineer</td>
+            <td>Junior Developer</td>
             <td>$55,000</td>
             <td><button id="deleteBtn">Delete</button></td>
-        </tr> -->
          </tbody>
-    </thead>
+         <tfoot></tfoot>
 </table>
 <h3>       
     Total Monthly Expenses: <span id="totalSalary">0.00</span>

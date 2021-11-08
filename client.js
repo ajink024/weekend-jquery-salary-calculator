@@ -3,23 +3,31 @@ $( document ).ready(function() {
 });
 
 
-//Global Variable.
-let allEmployees = []
 
-$(document).ready(onReady);
-function onReady(){
-    console.log('jQuery');
-    $('#submitBtn').on('click', onSubmit)
+const employeeArray = [
+    {
+      firstName: 'Asante',
+      lastName: 'Simmons',
+      idNumber: 5983,
+      jobTitle: 'Junior Developer',
+      salary: 82000,
+    },
+    {
+      firstName: 'Dom',
+      lastName: 'Javas',
+      idNumber: 1234,
+      jobTitle: 'Network Engineers',
+      salary: 38000,
+    }
+  ];
 
+Function onRready() {
+Console.log (jquery);
+renderEmployees(employees);
 
-    const employeeArray = {
+Function renderemployees(employees) {
 
-        // Main Functions
+for (let employee of employees) {
 
-          firstName = $('#firstNameInput').val();
-          LastName: $('#lastNameInput').val();
-          jobID: $('#idNumberInput').val();
-          jobTitleIn: $('#jobTitleInput').val();
-          annualSalaryIn: $('#salaryInput').val();
-          };
+  
 
