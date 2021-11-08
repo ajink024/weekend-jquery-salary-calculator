@@ -1,33 +1,45 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
+console.log('jscript.js ready')
+$(document).ready(readyFunction);
 
-
-
-const employeeArray = [
+const employees = [
     {
-      firstName: 'Asante',
-      lastName: 'Simmons',
-      idNumber: 5983,
-      jobTitle: 'Junior Developer',
+      firstName: 'Dustin',
+      lastName: 'Black',
+      idNumber: 6545,
+      jobTitle: 'Network Engineers',
       salary: 82000,
     },
     {
-      firstName: 'Dom',
-      lastName: 'Javas',
-      idNumber: 1234,
-      jobTitle: 'Network Engineers',
+      firstName: 'Connor',
+      lastName: 'Java',
+      idNumber: 6767,
+      jobTitle: 'Junior Developer',
       salary: 38000,
     }
   ];
 
-Function onRready() {
-Console.log (jquery);
+function onReady() {
+    console.log('JQ for US!')
 renderEmployees(employees);
+
+$('#add-employee-button').on('click' , handleEmployeeClick);
+}
 
 Function renderemployees(employees) {
 
-for (let employee of employees) {
+$('#employees-tbody').empty();
+
+$('#employeefirstname').val('');
+$('#employeelastname').val('');
+$('#employeeid').val('');
+$('#employeetitle').val('');
+$('#employeesalary').val('');
+
+
+
+
+
+
 
   
 

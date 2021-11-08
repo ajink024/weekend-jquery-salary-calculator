@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jQuery Salary Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="jquery.js"></script>
-    <script src="client.js"></script>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
 
 <h1> $ Monthly Salary Cost Calculator $</h1>
 <h2> Developed By Asante Simmons </h2>
@@ -17,21 +20,21 @@
 
 
 <input 
-    id="firstNameInput" 
+    id="employeefirstName" 
     type="text" 
     placeholder="First Name">
 <input 
-    id="lastNameInput" 
+    id="employeelastName" 
     type="text" 
     placeholder="Last Name">
 
 <input 
-    id="idInput"
+    id="employeeid"
     type="numbers" 
     placeholder="ID Number">
 
 <select 
-    id="jobInput">
+    id="employeetitle">
     <option>Junior Developer</option>
     <option>Security Engineer</option>
     <option>DevOps</option>
@@ -43,7 +46,7 @@
 <input 
     type="text" 
     placeholder="Annual Salary" 
-    id="salaryInput"
+    id="employeesalary"
     step="0.01">
 <button id="submitBtn">Submit!</button>
 
